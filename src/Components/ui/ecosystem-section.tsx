@@ -48,7 +48,7 @@ export default function EcosystemSection() {
                 <div className="absolute top-0 right-1/4 w-96 h-96 bg-purple-50 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
             </div>
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                 <div className="text-center mb-16">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

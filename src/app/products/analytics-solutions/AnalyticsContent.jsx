@@ -23,10 +23,11 @@ const AnalyticsContent = () => {
         <div className="min-h-screen bg-slate-50 font-inter text-slate-900 overflow-hidden">
 
             {/* --- HERO SECTION --- */}
+
             {/* --- HERO SECTION --- */}
             <div className="relative flex w-full min-h-screen md:min-h-[130vh] flex-col items-center justify-center overflow-hidden bg-[#2A3E5C]">
                 <WebGLShader className="absolute -top-[20%] md:-top-[50%] left-0 w-full h-[120%] md:h-[150%] block opacity-100" />
-                <div className="relative z-10 container mx-auto px-4 text-center">
+                <div className="relative z-10 w-full max-w-7xl mx-auto px-4 text-center">
                     <div className="relative border border-white/10 bg-black/20 backdrop-blur-sm p-2 w-full mx-auto max-w-4xl rounded-2xl">
                         <main className="relative border border-white/10 bg-black/40 rounded-xl py-16 px-6 overflow-hidden">
                             <motion.div
@@ -73,12 +74,12 @@ const AnalyticsContent = () => {
 
             {/* --- PRODUCT SECTIONS --- */}
             <section id="dashboards" className="py-12 md:py-24 bg-white">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="mb-16 text-center">
                         <h2 className="text-4xl font-bold text-[#2A3E5C] mb-4">Specialized Analytics Modules</h2>
                         <p className="text-slate-600 text-lg">tailored dashboards for every aspect of your institution</p>
                     </div>
-                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 md:gap-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
                         {data.products.map((product, index) => (
                             <motion.div
                                 key={index}

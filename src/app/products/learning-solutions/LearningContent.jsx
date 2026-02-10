@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, BookOpen, GraduationCap, Trophy, Users, Lightbulb, Target, Layers, Smartphone } from "lucide-react";
+import { ArrowRight, BookOpen, GraduationCap, Trophy, Users, Lightbulb, Target, Layers, Smartphone, Globe, Layout } from "lucide-react";
 import { PRODUCTS_DROPDOWN_DATA } from "@/lib/data";
 import ShaderBackground from "@/Components/ui/shader-background";
 
@@ -56,43 +56,35 @@ const LearningContent = () => {
                 </motion.div>
 
                 {/* Content Overlay */}
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
                             animate={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.6 }}
                             whileHover={{ scale: 1.05 }}
-                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/90 text-slate-800 font-semibold text-sm mb-8 border border-slate-200 backdrop-blur-md shadow-lg cursor-default"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white font-semibold text-sm mb-8 border border-white/20 backdrop-blur-md shadow-lg cursor-default"
                         >
                             <motion.div
                                 animate={{ rotate: [0, 10, -10, 0] }}
                                 transition={{ duration: 2, repeat: Infinity }}
                             >
-                                <GraduationCap className="w-5 h-5 text-[#2A3E5C]" />
+                                <Globe className="w-5 h-5 text-indigo-400" />
                             </motion.div>
                             <span>Future-Ready Workforce</span>
-                            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                            <span className="w-2 h-2 bg-indigo-400 rounded-full animate-pulse"></span>
                         </motion.div>
 
                         <motion.h1
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
-                            className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 leading-tight tracking-tight"
-                            style={{
-                                textShadow: '2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff'
-                            }}
+                            className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight tracking-tight"
                         >
-                            Empower Growth through <br />
+                            Upskill, Engage, & <br />
                             <motion.span
-                                className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-600"
-                                style={{
-                                    textShadow: 'none',
-                                    WebkitBackgroundClip: 'text',
-                                    filter: 'drop-shadow(2px 2px 0 white) drop-shadow(-2px -2px 0 white)'
-                                }}
-                            >Continuous Learning</motion.span>
+                                className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400"
+                            >Empower Teams</motion.span>
                         </motion.h1>
 
                         <motion.p
@@ -188,8 +180,8 @@ const LearningContent = () => {
 
             {/* --- LEARNING STATS --- */}
             <section className="py-16 bg-white border-y border-slate-100">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             { label: "Course Completion", value: "94%" },
                             { label: "Active Learners", value: "10k+" },
@@ -214,9 +206,9 @@ const LearningContent = () => {
 
             {/* --- INTRODUCTION SECTION --- */}
             <section className="py-24 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-5xl mx-auto">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="w-full">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                             {/* Left Content */}
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
@@ -275,7 +267,7 @@ const LearningContent = () => {
 
             {/* --- LEARNING JOURNEY TIMELINE --- */}
             <section className="py-24 bg-gradient-to-br from-slate-50 to-white overflow-hidden">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                     <div className="text-center mb-16">
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
@@ -290,7 +282,7 @@ const LearningContent = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
-                            className="text-4xl md:text-5xl font-bold text-slate-900 mb-4"
+                            className="text-4xl lg:text-5xl font-bold text-slate-900 mb-4"
                         >
                             The Learning Journey
                         </motion.h2>
@@ -442,17 +434,16 @@ const LearningContent = () => {
                     </div>
                 </div>
             </section>
-
             {/* --- PRODUCTS SECTION --- */}
-            <section id="solutions" className="py-24 bg-slate-50">
-                <div className="container mx-auto px-4">
+            <section id="features" className="py-24 bg-slate-50">
+                <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-[#2A3E5C] font-bold tracking-widest uppercase text-sm mb-2 block">Our Platform</span>
-                        <h2 className="text-4xl font-bold text-slate-900 mb-4">Your Learning Ecosystem</h2>
-                        <p className="text-slate-500 max-w-2xl mx-auto">From onboarding to leadership development, we have the tools.</p>
+                        <span className="text-[#2A3E5C] font-bold tracking-widest uppercase text-sm mb-2 block">Our Tools</span>
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">Comprehensive Learning Ecosystem</h2>
+                        <div className="h-1 w-20 bg-[#2A3E5C] mx-auto rounded-full"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
                         {data.products.map((product, index) => (
                             <motion.div
                                 key={index}
@@ -461,7 +452,7 @@ const LearningContent = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                                 whileHover={{ y: -10 }}
-                                className="bg-white rounded-3xl p-8 border border-slate-100 shadow-lg hover:shadow-2xl hover:border-[#2A3E5C]/20 transition-all duration-300 group flex flex-col h-full"
+                                className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-lg hover:shadow-2xl hover:border-indigo-500/20 transition-all duration-300 group flex flex-col h-full"
                             >
                                 <div className="mb-6">
                                     <div className="w-14 h-14 bg-[#2A3E5C]/5 rounded-2xl flex items-center justify-center group-hover:bg-[#2A3E5C] transition-all duration-300">
@@ -490,7 +481,7 @@ const LearningContent = () => {
 
             {/* --- CTA SECTION --- */}
             <section className="py-24 bg-white">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="relative bg-gradient-to-br from-[#2A3E5C] to-[#1a2a3f] rounded-[40px] p-12 md:p-20 overflow-hidden">
                         {/* Background Effects */}
                         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px] -mr-40 -mt-40"></div>

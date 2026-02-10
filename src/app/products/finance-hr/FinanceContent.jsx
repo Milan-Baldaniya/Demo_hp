@@ -63,7 +63,7 @@ const FinanceContent = () => {
                 </motion.div>
 
                 {/* Content Overlay */}
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                     <div className="max-w-4xl mx-auto text-center">
                         <motion.div
                             initial={{ opacity: 0, scale: 0.9 }}
@@ -86,7 +86,7 @@ const FinanceContent = () => {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.1 }}
-                            className="text-5xl md:text-7xl font-extrabold text-white mb-8 leading-tight tracking-tight"
+                            className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-8 leading-tight tracking-tight"
                         >
                             Accuracy, Compliance, & <br />
                             <motion.span
@@ -187,8 +187,8 @@ const FinanceContent = () => {
 
             {/* --- STATS SECTION --- */}
             <section className="py-16 bg-white border-y border-slate-100">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             { label: "Processing Accuracy", value: "99.9%" },
                             { label: "Time Saved", value: "40hrs/mo" },
@@ -220,7 +220,7 @@ const FinanceContent = () => {
                     <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-cyan-500 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
                 </div>
 
-                <div className="container mx-auto px-4 relative z-10">
+                <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                     <div className="text-center mb-16">
                         <motion.span
                             initial={{ opacity: 0, y: 20 }}
@@ -278,7 +278,7 @@ const FinanceContent = () => {
                             </div>
 
                             {/* Dashboard Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
                                 {/* Revenue Card */}
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.9 }}
@@ -535,14 +535,14 @@ const FinanceContent = () => {
 
             {/* --- FEATURES GRID (Bento Style) --- */}
             <section id="features" className="py-24 bg-slate-50">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <span className="text-[#2A3E5C] font-bold tracking-widest uppercase text-sm mb-2 block">Our Platform</span>
                         <h2 className="text-4xl font-bold text-slate-900 mb-4">Unified Operations Platform</h2>
                         <div className="h-1 w-20 bg-[#2A3E5C] mx-auto rounded-full"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
                         {data.products.map((product, index) => (
                             <motion.div
                                 key={index}
@@ -551,7 +551,7 @@ const FinanceContent = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                                 whileHover={{ y: -10 }}
-                                className="bg-white rounded-3xl p-8 border border-slate-100 shadow-lg hover:shadow-2xl hover:border-[#2A3E5C]/20 transition-all duration-300 group flex flex-col h-full"
+                                className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-lg hover:shadow-2xl hover:border-[#2A3E5C]/20 transition-all duration-300 group flex flex-col h-full"
                             >
                                 <div className="mb-6">
                                     <div className="w-14 h-14 bg-[#2A3E5C]/5 rounded-2xl flex items-center justify-center group-hover:bg-[#2A3E5C] transition-all duration-300">
@@ -582,9 +582,9 @@ const FinanceContent = () => {
 
             {/* --- WHY CHOOSE US --- */}
             <section className="py-24 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-5xl mx-auto">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="w-full">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
                             {/* Left Content */}
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
@@ -644,8 +644,8 @@ const FinanceContent = () => {
 
             {/* --- CTA SECTION --- */}
             <section className="py-24 bg-slate-50">
-                <div className="container mx-auto px-4">
-                    <div className="relative bg-gradient-to-br from-[#2A3E5C] to-[#1a2a3f] rounded-[40px] p-12 md:p-20 overflow-hidden">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="relative bg-gradient-to-br from-[#2A3E5C] to-[#1a2a3f] rounded-[40px] p-8 md:p-10 lg:p-20 overflow-hidden">
                         {/* Background Effects */}
                         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px] -mr-40 -mt-40"></div>
                         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-cyan-500/20 rounded-full blur-[100px] -ml-40 -mb-40"></div>

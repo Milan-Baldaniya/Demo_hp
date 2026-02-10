@@ -42,13 +42,13 @@ const IntegrationContent = () => {
 
             {/* --- FEATURES / PRODUCTS --- */}
             <section id="integrations" className="py-24 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="bg-indigo-50 rounded-3xl p-10 lg:p-16 border border-indigo-100"
+                            className="bg-indigo-50 rounded-3xl p-6 md:p-10 lg:p-16 border border-indigo-100"
                         >
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">System Integration</h2>
                             <p className="text-slate-600 text-lg mb-8 leading-relaxed">
@@ -73,7 +73,7 @@ const IntegrationContent = () => {
                             initial={{ opacity: 0, x: 50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="bg-purple-50 rounded-3xl p-10 lg:p-16 border border-purple-100"
+                            className="bg-purple-50 rounded-3xl p-6 md:p-10 lg:p-16 border border-purple-100"
                         >
                             <h2 className="text-3xl font-bold text-slate-900 mb-6">HRIT Solutions</h2>
                             <p className="text-slate-600 text-lg mb-8 leading-relaxed">
@@ -102,8 +102,8 @@ const IntegrationContent = () => {
 
             {/* --- CTA --- */}
             <section className="py-24 bg-[#2A3E5C] text-white text-center">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-8">Connect Everything.</h2>
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Connect Everything.</h2>
                     <p className="text-indigo-200 text-xl max-w-2xl mx-auto mb-10">
                         Ready to unify your digital landscape? Let's talk architecture.
                     </p>

@@ -40,7 +40,7 @@ const TalentContent = () => {
                                 <Sparkles className="w-4 h-4" />
                                 <span>AI-Powered Talent Platform</span>
                             </div>
-                            <h1 className="text-4xl md:text-[5rem] font-bold text-[#2A3E5C] leading-tight tracking-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-[5rem] font-bold text-[#2A3E5C] leading-tight tracking-tight">
                                 Unleash Your <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2A3E5C] to-blue-500">
                                     Workforce Potential
@@ -165,7 +165,7 @@ const TalentContent = () => {
                                 <div className="bg-white rounded-xl border border-slate-100 p-5 flex flex-col">
                                     <div className="flex items-center justify-between mb-4">
                                         <h3 className="font-bold text-slate-900">Active Talent Pool</h3>
-                                        <button className="text-xs text-[#2A3E5C] font-medium hover:underline">View All</button>
+                                        <button suppressHydrationWarning className="text-xs text-[#2A3E5C] font-medium hover:underline">View All</button>
                                     </div>
                                     <div className="space-y-3 flex-1 overflow-hidden">
                                         {[
@@ -276,8 +276,8 @@ const TalentContent = () => {
 
             {/* --- STATS BANNER --- */}
             <section className="py-16 bg-white border-y border-slate-100">
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
                         {[
                             { value: "500+", label: "Organizations" },
                             { value: "1M+", label: "Employees Managed" },
@@ -302,15 +302,16 @@ const TalentContent = () => {
 
             {/* --- INTRODUCTION SECTION --- */}
             <section className="py-24 bg-white">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-5xl mx-auto">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="w-full">
+                        <div className="grid grid-cols-1 xl:grid-cols-2 gap-16">
                             {/* Left Content */}
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6 }}
+                                className="w-full"
                             >
                                 <span className="text-[#2A3E5C] font-bold tracking-widest uppercase text-sm mb-4 block">About Talent Solutions</span>
                                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
@@ -337,7 +338,7 @@ const TalentContent = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
-                                className="space-y-6"
+                                className="space-y-6 w-full"
                             >
                                 {[
                                     {
@@ -379,7 +380,7 @@ const TalentContent = () => {
 
             {/* --- WHY CHOOSE US (Expanded Content) --- */}
             <section className="py-24 bg-slate-50 relative">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="text-center max-w-3xl mx-auto mb-20">
                         <span className="text-[#2A3E5C] font-bold tracking-widest uppercase text-sm mb-4 block">Why Scholar Clone</span>
                         <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Reimagine Your Talent Strategy</h2>
@@ -388,7 +389,7 @@ const TalentContent = () => {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
                         {[
                             { icon: Zap, title: "AI-Powered Intelligence", desc: "Automate screening, skill matching, and career pathing with our advanced AI engine.", color: "from-blue-500 to-cyan-500" },
                             { icon: Target, title: "Precision Hiring", desc: "Reduce time-to-hire by 40% while improving candidate quality through data-backed insights.", color: "from-[#2A3E5C] to-blue-600" },
@@ -401,7 +402,7 @@ const TalentContent = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.15 }}
                                 whileHover={{ y: -10 }}
-                                className="p-8 rounded-3xl bg-white border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl transition-all duration-300 group"
+                                className="p-6 md:p-8 rounded-3xl bg-white border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-2xl transition-all duration-300 group"
                             >
                                 <div className={`w-16 h-16 rounded-2xl flex items-center justify-center text-white mb-6 bg-gradient-to-br ${item.color} shadow-lg`}>
                                     <item.icon className="w-8 h-8" />
@@ -416,14 +417,14 @@ const TalentContent = () => {
 
             {/* --- PRODUCTS GRID --- */}
             <section id="solutions" className="py-24 bg-white">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <span className="text-[#2A3E5C] font-bold tracking-widest uppercase text-sm mb-2 block">Our Tools</span>
                         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4 tracking-tight">Complete Talent Suite</h2>
                         <div className="h-1 w-20 bg-[#2A3E5C] mx-auto rounded-full mt-6"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
                         {data.products.map((product, index) => (
                             <motion.div
                                 key={index}
@@ -432,7 +433,7 @@ const TalentContent = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.08 }}
                                 whileHover={{ y: -10, scale: 1.02 }}
-                                className="bg-white rounded-3xl p-8 border border-slate-100 shadow-lg hover:shadow-2xl hover:border-[#2A3E5C]/20 transition-all duration-300 group flex flex-col h-full"
+                                className="bg-white rounded-3xl p-6 md:p-8 border border-slate-100 shadow-lg hover:shadow-2xl hover:border-[#2A3E5C]/20 transition-all duration-300 group flex flex-col h-full"
                             >
                                 <div className="mb-6">
                                     <div className="w-14 h-14 bg-[#2A3E5C]/5 rounded-2xl flex items-center justify-center group-hover:bg-[#2A3E5C] transition-all duration-300">
@@ -461,7 +462,7 @@ const TalentContent = () => {
 
             {/* --- TESTIMONIAL / TRUST SECTION (NEW) --- */}
             <section className="py-24 bg-slate-50">
-                <div className="container mx-auto px-4">
+                <div className="w-full max-w-7xl mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-100 text-yellow-700 font-semibold text-sm mb-8 border border-yellow-200">
                             <Trophy className="w-4 h-4" />
@@ -487,8 +488,8 @@ const TalentContent = () => {
 
             {/* --- BIG CTA (Redesigned) --- */}
             <section className="py-24 bg-white relative overflow-hidden">
-                <div className="container mx-auto px-4">
-                    <div className="relative bg-gradient-to-br from-[#2A3E5C] to-[#1a2a3f] rounded-[40px] p-12 md:p-20 overflow-hidden">
+                <div className="w-full max-w-7xl mx-auto px-4">
+                    <div className="relative bg-gradient-to-br from-[#2A3E5C] to-[#1a2a3f] rounded-[40px] p-8 md:p-10 lg:p-20 overflow-hidden">
                         {/* Background Effects */}
                         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px] -mr-40 -mt-40"></div>
                         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-cyan-500/20 rounded-full blur-[100px] -ml-40 -mb-40"></div>
@@ -517,7 +518,7 @@ const TalentContent = () => {
                                 Join 500+ forward-thinking organizations transforming their workforce and culture with Scholar Clone.
                             </p>
 
-                            <div className="flex flex-col sm:flex-row justify-center gap-4">
+                            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4">
                                 <Link href="/contact">
                                     <button suppressHydrationWarning className="px-10 py-5 bg-white text-[#2A3E5C] font-bold text-lg rounded-full hover:bg-blue-50 transition-all shadow-2xl hover:scale-105 flex items-center justify-center gap-2">
                                         <Sparkles className="w-5 h-5" />

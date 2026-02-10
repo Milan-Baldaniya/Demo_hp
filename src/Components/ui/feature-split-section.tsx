@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react";
 export function FeatureSplitSection() {
     return (
         <section className="py-16 md:py-24 bg-[#2A3E5C] overflow-hidden">
-            <div className="container mx-auto px-4 md:px-6">
+            <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     {/* Visual Content */}
                     <motion.div

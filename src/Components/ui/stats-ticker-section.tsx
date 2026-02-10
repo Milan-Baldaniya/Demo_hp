@@ -12,8 +12,8 @@ const stats = [
 export function StatsTickerSection() {
     return (
         <section className="py-12 md:py-20 bg-white border-y border-slate-100">
-            <div className="container mx-auto px-4 md:px-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 lg:gap-12 text-center divide-y sm:divide-y-0 sm:divide-x-0 xl:divide-x divide-slate-100">
+            <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center divide-y sm:divide-y-0 sm:divide-x-0 lg:divide-x divide-slate-100">
                     {stats.map((stat, index) => (
                         <div key={index} className="flex flex-col items-center p-2 sm:p-4">
                             <motion.div

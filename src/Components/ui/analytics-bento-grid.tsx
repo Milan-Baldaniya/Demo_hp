@@ -122,7 +122,7 @@ const items = [
 export function AnalyticsBentoGrid() {
     return (
         <section className="py-16 md:py-24 bg-white">
-            <div className="container mx-auto px-4 md:px-6">
+            <div className="w-full max-w-7xl mx-auto px-4 md:px-6">
                 <div className="mb-12 md:mb-16 text-center">
                     <h2 className="text-[clamp(2rem,5vw,3rem)] font-bold text-[#2A3E5C] mb-4">
                         Everything you need to grow
@@ -141,6 +141,7 @@ export function AnalyticsBentoGrid() {
                             viewport={{ once: true }}
                             className={cn(
                                 "row-span-1 rounded-2xl group/bento hover:shadow-2xl transition duration-300 shadow-sm border border-[#2A3E5C]/10 bg-white p-6 justify-between flex flex-col space-y-4",
+                                // Switch col-spans to apply only at XL, keeping single col at MD/LG for better space
                                 item.className?.replace('md:', 'xl:')
                             )}
                         >

@@ -28,7 +28,7 @@ export default function ArchitectureSection() {
             {/* Background Grid - Subtle for texture */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#0000000a_1px,transparent_1px),linear-gradient(to_bottom,#0000000a_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]" />
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="w-full max-w-7xl mx-auto px-4 relative z-10">
                 <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
                     {/* Left: Text Content */}
@@ -37,7 +37,7 @@ export default function ArchitectureSection() {
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            className="text-5xl md:text-7xl font-black tracking-tighter leading-[1.1] text-white [-webkit-text-stroke:1px_black] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]"
+                            className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.1] text-white [-webkit-text-stroke:1px_black] drop-shadow-[0_2px_2px_rgba(0,0,0,0.3)]"
                         >
                             THE CORE OF <br />
                             <span className="text-white [-webkit-text-stroke:1px_#1e293b] drop-shadow-sm">
