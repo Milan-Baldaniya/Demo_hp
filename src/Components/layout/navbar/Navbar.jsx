@@ -227,7 +227,7 @@ export function Navbar() {
             <img
               src="/assets/Logo.png"
               alt="Scholar Clone Logo"
-              className="h-12 w-auto transition-transform duration-500 group-hover:rotate-[360deg]"
+              className="h-12 w-auto"
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold leading-none text-white">
